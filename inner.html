@@ -35,10 +35,11 @@
   <main>
     <div class="container">
       <div class="left-panel">
-        <div class="range">
-          <input type="range" min="0" max="15 000" step="1">
-        </div>
+
         <form action="#" method="post">
+          <div class="range">
+            <input type="range" min="0" max="15 000" step="1">
+          </div>
           <div class="type-of-net">
             <h2 class="net-name">Сетка:</h2>
             <ul>
@@ -86,6 +87,7 @@
       </div>
       <div class="right-panel">
         <div class="sort">
+          <span class="sort-text">Сортировать</span>
           <ul>
             <li>
               <a href="#">По цене</a>
@@ -100,64 +102,69 @@
         </div>
         <section class="catalog-gallery">
           <article class="catalog-gallery-item">
-            <img class="background-image" src="#" height="50px" weidth="50px" alt="Sedona">
-            <a href="#">
-              <span>Sedona</span>
-              <span>Информационный сайт<br>для туристов</span>
-            </a>
-            <div class="prise-block">
-              <button class="price-button">9 900 руб.</button>
+            <img class="item-image" src="#" height="50px" weidth="50px" alt="Sedona">
+            <div class="wrapper-block">
+              <a href="#">
+                <h2 class="item-title">Sedona</h2>
+              </a>
+              <span class="item-description">Информационный сайт<br>для туристов</span>
+              <a href="#" class="btn">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-gallery-item">
-            <img class="background-image" src="#" height="50px" weidth="50px" alt="Pink">
-            <a href="#">
-              <span>Pink</span>
-              <span></span>
-            </a>
-            <div class="prise-block">
-              <button class="price-button">9 900 руб.</button>
+            <img class="item-image" src="#" height="50px" weidth="50px" alt="Pink">
+            <div class="wrapper-block">
+              <a href="#">
+                <h2 class="item-title">Pink</h2>
+              </a>
+              <span class="item-description"></span>
+              <a href="#" class="btn"></a>
             </div>
+
           </article>
           <article class="catalog-gallery-item">
-            <img class="background-image" src="#" height="50px" weidth="50px" alt="Borodinski">
-            <a href="#">
-              <span>Borodinski</span>
-              <span></span>
-            </a>
-            <div class="prise-block">
-              <button class="price-button">9 900 руб.</button>
+            <img class="item-image" src="#" height="50px" weidth="50px" alt="Borodinski">
+            <div class="wrapper-block">
+              <a href="#">
+                <h2 class="item-title">Borodincki</h2>
+              </a>
+              <span class="item-description"></span>
+              <a href="#" class="btn"></a>
             </div>
+
           </article>
           <article class="catalog-gallery-item">
-            <img class="background-image" src="#" height="50px" weidth="50px" alt="Mishka">
-            <a href="#">
-              <span>Mishka</span>
-              <span></span>
-            </a>
-            <div class="prise-block">
-              <button class="price-button">9 900 руб.</button>
+            <img class="item-image" src="#" height="50px" weidth="50px" alt="Mishka">
+            <div class="wrapper-block">
+              <a href="#">
+                <h2 class="item-title">Mishka</h2>
+              </a>
+              <span class="item-description"></span>
+              <a href="#" class="btn"></a>
             </div>
+
           </article>
           <article class="catalog-gallery-item">
-            <img class="background-image" src="#" height="50px" weidth="50px" alt="A+">
-            <a href="#">
-              <span>A+</span>
-              <span></span>
-            </a>
-            <div class="prise-block">
-              <button class="price-button">9 900 руб.</button>
+            <img class="item-image" src="#" height="50px" weidth="50px" alt="А+">
+            <div class="wrapper-block">
+              <a href="#">
+                <h2 class="item-title">A+</h2>
+              </a>
+              <span class="item-description"></span>
+              <a href="#" class="btn"></a>
             </div>
+
           </article>
           <article class="catalog-gallery-item">
-            <img class="background-image" src="#" height="50px" weidth="50px" alt="Кваст">
-            <a href="#">
-              <span>Кваст</span>
-              <span></span>
-            </a>
-            <div class="prise-block">
-              <button class="price-button">9 900 руб.</button>
+            <img class="item-image" src="#" height="50px" weidth="50px" alt="Кваст">
+            <div class="wrapper-block">
+              <a href="#">
+                <h2 class="item-title">Кваст</h2>
+              </a>
+              <span class="item-description"></span>
+              <a href="#" class="btn"></a>
             </div>
+
           </article>
         </section>
 
@@ -165,41 +172,63 @@
       <section class="paginations">
         <ul>
           <li>
-            <span>1</span>
+            <span class=”btn btn-disabled”>1</span>
           </li>
           <li>
-            <a class="btn" href="#">2</a>
+            <a class="btn btn-big" href="#">2</a>
           </li>
           <li>
-            <a class="btn" href="#">3</a>
+            <a class="btn btn-big" href="#">3</a>
           </li>
           <li>
-            <a class="btn" href="#">Седующая</a>
+            <a class="btn btn-big" href="#">Седующая</a>
           </li>
         </ul>
       </section>
     </div>
   </main>
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-contacts">
-        <b>Nerds Design Studio</b>
-        191186, Санкт-Петербург,<br>
-        Б. Конюшенная, д. 19.8<br>
-        Тел: +7 (812) 275-75-75<br>
-        <a class="ontact-button" href="#">Напишите нам</a>
+  <section class="map">
+    <div class="footer-contacts">
+      <b>Nerds Design Studio</b>
+      191186, Санкт-Петербург,<br>
+      Б. Конюшенная, д. 19.8<br>
+      Тел: +7 (812) 275-75-75<br>
+
+      <label for="modal-1" class="contact-button">
+        <a class="contact-button" href="#">Напишите нам</a>
+      </label>
+      <div class="modal">
+        <input class="modal-open" id="modal-1" type="checkbox" hidden>
+        <div class="modal-wrap" aria-hidden="true" role="dialog">
+          <label class="modal-overlay" for="modal-1"></label>
+          <div class="modal-dialog">
+            <div class="modal-header">
+              <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+            </div>
+            <div class="modal-body">
+              <textarea placeholder="Ваше сообщение" rows="5"></textarea>
+            </div>
+            <div class="modal-footer">
+              <label class="btn btn-primary" for="modal-1">Напишите нам</label>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="footer-logo">
         <a href="#"><img src="50px" width="" height="50px" alt="Дизайн студия Nerds"></a>
       </div>
-      <div class="footer-social">
-        <span>Давайте дружить, это выгодно!</span>
-        <span>Скидка 10% для друзей из социальных сетей.</span>
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-social">
+          <span>Давайте дружить, это выгодно!</span>
+          <span>Скидка 10% для друзей из социальных сетей.</span>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-</html>
+    </footer>
+  </body>
+  </html>
