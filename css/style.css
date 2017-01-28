@@ -1,0 +1,21 @@
+body{
+  font-size: 16pt;
+  line-height: 24pt;
+  color: #283136;
+  font-weight: regular;
+  font-family: Roboto;
+}
+h2{
+  font-size: 55pt;
+  line-height: 55pt;
+  color: #000000;
+  font-weight: medium;
+  font-family: Roboto;
+}
+h1{
+  font-size: 55pt;
+  line-height: 55pt;
+  color: #000000;
+  font-weight: medium;
+  font-family: Roboto;
+}
