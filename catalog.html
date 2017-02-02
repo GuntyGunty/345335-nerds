@@ -7,22 +7,22 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="main-header-layout container">
       <div class="index-logo">
         <a href="#"><img src="img/catalog/nerds_logo.png" width="227px" height="75px" alt="Дизайн студия Nerds"></a>
       </div>
       <nav class="main-navigation">
         <ul>
-          <li>
+          <li class="nav">
             <a href=#>Студия</a>
           </li>
-          <li>
+          <li class="nav">
             <a href=#>Клиенты</a>
           </li>
-          <li>
+          <li class="nav">
             <a href=#>Магазин</a>
           </li>
-          <li>
+          <li class="nav">
             <a href=#>Контакты</a>
           </li>
         </ul>
@@ -30,13 +30,15 @@
       <div class="user-block">
         <a class="bascet" href="#">Корзина</a>
       </div>
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
     </div>
+    <div class="container">
+    <h1 class="main-title">Магазин готовых шаблонов</h1>
+  </div>
   </header>
   <main>
     <div class="container">
+      <div class="content">
       <div class="left-panel">
-
         <form action="#" method="post">
           <div class="range">
             <input type="range" min="0" max="15 000" step="1">
@@ -87,20 +89,22 @@
         </form>
       </div>
       <div class="right-panel">
+
         <div class="sort">
           <span class="sort-text">Сортировать</span>
           <ul>
-            <li>
+            <li class="type">
               <a href="#">По цене</a>
             </li>
-            <li>
+            <li class="type">
               <a href="#">По типу</a>
             </li>
-            <li>
+            <li class="type">
               <a href="#">По названию</a>
             </li>
           </ul>
         </div>
+
         <section class="catalog-gallery">
           <article class="catalog-gallery-item">
             <img class="item-image" src="img/catalog/sedona.jpg" height="756px" weidth="491px" alt="Sedona">
@@ -121,7 +125,6 @@
               <span class="item-description"></span>
               <a href="#" class="btn"></a>
             </div>
-
           </article>
           <article class="catalog-gallery-item">
             <img class="item-image" src="img/catalog/barbershop.jpg" height="756px" weidth="491px" alt="Borodinski">
@@ -170,23 +173,23 @@
         </section>
         <section class="paginations">
           <ul>
-            <li>
+            <li class="pag">
               <span class="btn btn-disabled">1</span>
             </li>
-            <li>
+            <li class="pag">
               <a class="btn btn-big" href="#">2</a>
             </li>
-            <li>
+            <li class="pag">
               <a class="btn btn-big" href="#">3</a>
             </li>
-            <li>
+            <li class="pag">
               <a class="btn btn-big" href="#">Седующая</a>
             </li>
           </ul>
         </section>
 
       </div>
-
+</div>
     </div>
   </main>
   <section class="map">
@@ -207,7 +210,8 @@
         </div>
       </section>
       <footer class="main-footer">
-        <div class="container">
+        <div class="main-footer-layout container">
+
           <div class="footer-information">
             <span>Давайте дружить, это выгодно!</span>
             <span>Скидка 10% для друзей из социальных сетей.</span>
@@ -217,7 +221,7 @@
             <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </div>
-        </div>
+
       </div>
     </footer>
   </body>
