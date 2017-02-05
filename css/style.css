@@ -15,7 +15,7 @@ body {
 img {
   max-width: 100%;
 }
- h2 {
+h2 {
   font-size: 45px;
   line-height: 1.4;
   color: #000000;
@@ -43,10 +43,10 @@ h1{
 }
 /*хэдэр и навигация*/
 .main-header {
-    background-color: #eeeeee;
-    height: 545px;
+  background-color: #eeeeee;
+  height: 545px;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .main-header-layout {
   display: flex;
@@ -56,7 +56,7 @@ h1{
 .index-logo {
   width: 160px;
   /**/
-min-height: 65px;
+  min-height: 65px;
 }
 .main-navigation {
   width: 440px;
@@ -81,8 +81,8 @@ min-height: 65px;
 .main-navigation a {
   display: block;
   paddin: 25px 20px;
-text-decoration: none;
-color: 000000;
+  text-decoration: none;
+  color: 000000;
 }
 .main-navigation a:hover {
   color:#fb565a;
@@ -94,7 +94,7 @@ color: 000000;
   min-height: 65px;
 }
 .basket {
-position: relative;
+  position: relative;
 
   display: inline-block;
   padding: 25px 20px;
@@ -110,9 +110,9 @@ position: relative;
 }
 .basket::before {
   content: "";
-position: absolute;
-top: 30px;
-left: 0px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
   width: 20px;
   height: 20px;
   background: #ff0000 url("img/index/sprait.png") no-repeat;
@@ -122,26 +122,25 @@ left: 0px;
 /*слайдер*/
 .slider {
   display: flex;
-
-
   flex-direction: row;
-box-sizing: border-box;
+  box-sizing: border-box;
   justify-content: space-between;
 }
 .item {
-  display: inline-block;
-
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
 
 }
-
 .desctop, .touchpad {
   display: none;
 }
- .left-mobile {
+.left-mobile {
 
   width: 380px;
 }
- .right-mobile {
+.right-mobile {
 
   width: 760px;
 }
@@ -200,9 +199,9 @@ box-sizing: border-box;
 }
 /*features*/
 .features {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .procents {
   display: inline-block;
@@ -215,11 +214,11 @@ justify-content: space-around;
 }
 /*партнеры*/
 .partners {
-display: flex;
-justify-content: space-around;
-margin-bottom: 80px;
-margin-top: 80px;
-padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  padding: 20px;
 }
 
 /*map*/
@@ -255,11 +254,11 @@ padding: 20px;
 }
 .catalog-gallery{
   font-size: 0px;
-    display: flex;
-    flex-flow: row wrap ;
-    width: 760px;
-    /**/
-    min-height: 1924px;
+  display: flex;
+  flex-flow: row wrap ;
+  width: 760px;
+  /**/
+  min-height: 1924px;
 }
 
 .wrapper-block {
