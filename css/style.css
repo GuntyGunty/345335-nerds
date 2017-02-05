@@ -30,8 +30,9 @@ h1{
   font-family: "Roboto", "Arial", sans-serif;
 }
 .main-header {
-  /*только для сетки*/
-  min-height: 115px;
+  background-color: #eeeeee;
+  color: 000000;
+
 }
 .container {
   width: 1200px;
@@ -40,8 +41,11 @@ h1{
   /*только для сетки*/
   min-height: 115px;
 }
-/*хэдэ и навигация*/
-
+/*хэдэр и навигация*/
+.main-header {
+    background-color: #eeeeee;
+    color:
+}
 .main-header-layout {
   display: flex;
   justify-content: space-between;
@@ -57,13 +61,60 @@ min-height: 65px;
   /**/
   min-height: 65px;
 }
-.nav {
-  display: inline-block;
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0px;
 }
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 10px;
+  margin-left: 20px;
+
+}
+.main-navigation a {
+  display: block;
+  paddin: 25px 20px;
+text-decoration: none;
+color: 000000;
+}
+.main-navigation a:hover {
+  color:#fb565a;
+}
+
 .user-block {
-  width: 160px;
+  max-width: 160px;
   /**/
   min-height: 65px;
+}
+.basket {
+position: relative;
+
+  display: inline-block;
+  padding: 25px 20px;
+  padding-right: 50px;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 30px;
+  color: 000000;
+  text-decoration: none;
+}
+.basket:hover {
+  color: #fb565a;
+}
+.basket::before {
+  content: "";
+position: absolute;
+top: 20px;
+left: 20px;
+  width: 20px;
+  height: 20px;
+
+  background: #ff0000;
 }
 /*index-content*/
 /*слайдер*/
@@ -108,6 +159,8 @@ display: none;
   justify-content: space-between;
 }
 .product {
+  font-size: 16px;
+  line-height: 1.2;
   width: 300px;
   /*для сетки*/
   min-height: 510px;
@@ -120,12 +173,12 @@ display: none;
   margin-bottom: 10px;
 }
 .left-side {
-  width: 360px;
+  width: 660px;
   /**/
   min-height: 530px;
 }
 .right-side {
-  width: 660px;
+  width: 360px;
   /**/
   min-height: 530px;
 }
@@ -190,7 +243,7 @@ padding: 20px;
 .catalog-gallery{
   font-size: 0px;
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap ;
     width: 760px;
     /**/
     min-height: 1924px;
@@ -205,9 +258,7 @@ padding: 20px;
   min-height: 620px;
   margin-right: 20px;
 }
-.catalog-gallery-item:nth-child(3){
-  margin-right: 0px;
-}
+
 .pag {
   display: inline-block;
 }
