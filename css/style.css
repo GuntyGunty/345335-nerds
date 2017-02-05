@@ -44,7 +44,9 @@ h1{
 /*хэдэр и навигация*/
 .main-header {
     background-color: #eeeeee;
-    color:
+    height: 545px;
+
+    box-sizing: border-box;
 }
 .main-header-layout {
   display: flex;
@@ -109,50 +111,60 @@ position: relative;
 .basket::before {
   content: "";
 position: absolute;
-top: 20px;
-left: 20px;
+top: 30px;
+left: 0px;
   width: 20px;
   height: 20px;
-
-  background: #ff0000;
+  background: #ff0000 url("img/index/sprait.png") no-repeat;
+  background-position: -1px -10px;
 }
 /*index-content*/
 /*слайдер*/
-/*
 .slider {
   display: flex;
-  width: 1160px;
-  height: 425px;
-  flex-direction: column;
-  box-sizing: border-box;
-  justify-content: space-around;
-  display: none;
-}
-.item, .left-side {
-  width: 380px;
+
+
+  flex-direction: row;
+box-sizing: border-box;
   justify-content: space-between;
-  align-self: flex-start;
+}
+.item {
+  display: inline-block;
+
+
+}
+
+.desctop, .touchpad {
   display: none;
 }
-.item, .right-side-mobile {
-  width: 760px;
-  height: 420px
-  align-self: flex-end;
-  display: none;
+ .left-mobile {
+
+  width: 380px;
 }
-.item, .right-side-desctops {
+ .right-mobile {
+
   width: 760px;
-  height: 420px;
-  align-self: flex-end;
-display: none;
 }
-.item, .right-side-touchpad {
+.left-desctops {
+  width: 520px;
+
+}
+.item, .left-touchpad {
+  width: 400px;
+}
+.item, .right-desctops {
+  width: 665px;
+
+}
+.item, .right-touchpad {
   width: 760px;
-  height: 420px;
-  align-self: flex-end;
-display: none;
 }
-*/
+
+.slider-navigate {
+  display: inline-block;
+  text-align: center;
+}
+
 /* products*/
 .products {
   display: flex;
@@ -203,7 +215,8 @@ justify-content: space-around;
 }
 /*партнеры*/
 .partners {
-display: inline-block;
+display: flex;
+justify-content: space-around;
 margin-bottom: 80px;
 margin-top: 80px;
 padding: 20px;
