@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-active {
+    width: 10px;
+    height: 10px;
+    background-position: -10px -10px;
+}
+
+.sprite-cart_icon {
+    width: 15px;
+    height: 15px;
+    background-position: -40px -10px;
+}
+
+.sprite-close_cross {
+    width: 21px;
+    height: 21px;
+    background-position: -75px -10px;
+}
+
+.sprite-fb {
+    width: 12px;
+    height: 22px;
+    background-position: -116px -10px;
+}
+
+.sprite-insta {
+    width: 21px;
+    height: 21px;
+    background-position: -148px -10px;
+}
+
+.sprite-pagination {
+    width: 18px;
+    height: 18px;
+    background-position: -189px -10px;
+}
+
+.sprite-red_line {
+    width: 25px;
+    height: 2px;
+    background-position: -227px -10px;
+}
+
+.sprite-vk {
+    width: 26px;
+    height: 15px;
+    background-position: -272px -10px;
+}

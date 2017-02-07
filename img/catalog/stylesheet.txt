@@ -1,0 +1,47 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart_icon {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-checkbox_off {
+    width: 23px;
+    height: 23px;
+    background-position: -30px -5px;
+}
+
+.sprite-checkbox_on {
+    width: 27px;
+    height: 23px;
+    background-position: -63px -5px;
+}
+
+.sprite-radio_off {
+    width: 25px;
+    height: 25px;
+    background-position: -100px -5px;
+}
+
+.sprite-slider_round {
+    width: 20px;
+    height: 23px;
+    background-position: -135px -5px;
+}
+
+.sprite-sort_down {
+    width: 9px;
+    height: 9px;
+    background-position: -165px -5px;
+}
+
+.sprite-sort_up {
+    width: 9px;
+    height: 9px;
+    background-position: -184px -5px;
+}
