@@ -5,15 +5,18 @@
   <title>HTML Academy: Нёрдс</title>
   <link  rel="stylesheet" href="css/normalize.css">
   <link  rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="<link href="https://fonts.googleapis.com/css?family="Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="catalog-header">
     <div class="main-header-layout container">
+
       <div class="index-logo">
-        <a href="#"><img src="img/catalog/nerds_logo.png" width="227px" height="75px" alt="Дизайн студия Nerds"></a>
+        <a href="#"><img src="img/index/nerds_logo.png" width="160px" height="65px" alt="Дизайн студия Nerds"></a>
       </div>
+
       <nav class="main-navigation">
+
         <ul>
           <li>
             <a href=#>Студия</a>
@@ -21,8 +24,8 @@
           <li>
             <a href=#>Клиенты</a>
           </li>
-          <li>
-            <a href=#>Магазин</a>
+          <li class="active">
+            <a >Магазин</a>
           </li>
           <li>
             <a href=#>Контакты</a>
@@ -39,13 +42,17 @@
   </header>
   <main>
     <div class="container">
+
+
       <div class="content">
+
       <div class="left-panel">
+        <span class="range-sort-price">Стоимость:</span>
         <form action="form.php" method="GET">
       <div class="range-filter">
         <div class="range-controls">
           <div class="scale">
-            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            <div class="bar" style="margin-left: 5%; width: 65%"></div>
           </div>
           <div class="toggle toggle-min"></div>
           <div class="toggle toggle-max"></div>
@@ -58,16 +65,16 @@
           <div class="type-of-net">
             <h2 class="net-name">Сетка:</h2>
             <ul>
-              <li>
-                <input type="radio" name="net-type" id="subscribe-field-6">
+              <li class="active">
+                <input type="radio" name="net-type" id="subscribe-field-6" >
                 <label for="subscribe-field-6">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" name="net-type" id="subscribe-field-7" checked>
+                <input type="radio" name="net-type" id="subscribe-field-7" >
                 <label for="subscribe-field-7">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" name="net-type" id="subscribe-field-8">
+                <input type="radio" name="net-type" id="subscribe-field-8" >
                 <label for="subscribe-field-8">Резиновая</label>
               </li>
             </ul>
@@ -75,7 +82,7 @@
           <div class="features">
             <h2 class="features-name">Особенности:</h2>
             <ul>
-              <li>
+              <li class="checked">
                 <input type="checkbox" name="Slaider" id="subscribe-field">
                 <label for="subscribe-field">Слайдер</label>
               </li>
@@ -83,7 +90,7 @@
                 <input type="checkbox" name="feature-block" id="subscribe-field-1">
                 <label for="subscribe-field-1">Блок преимуществ</label>
               </li>
-              <li>
+              <li class="checked">
                 <input type="checkbox" name="News" id="subscribe-field-1">
                 <label for="subscribe-field-1">Новости</label>
               </li>
@@ -100,23 +107,23 @@
           <button class="btn">Показать</button>
         </form>
       </div>
-      <div class="right-panel">
 
-        <div class="sort">
+      <div class="right-panel">
+        <div class="catalog-sort">
+
           <span class="sort-text">Сортировать</span>
           <ul>
-            <li class="type">
-              <a href="#" class="active">По цене</a>
+            <li class="active">
+              <a href="#" >По цене</a>
             </li>
-            <li class="type">
+            <li >
               <a href="#">По типу</a>
             </li>
-            <li class="type">
+            <li >
               <a href="#">По названию</a>
             </li>
           </ul>
         </div>
-
         <section class="catalog-gallery">
           <article class="catalog-gallery-item">
             <img class="item-image" src="img/catalog/sedona.jpg" height="615px" weidth="360px" alt="Sedona">
