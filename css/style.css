@@ -55,6 +55,9 @@ img {
 .index-logo:hover {
   opacity: 0.8;
 }
+.index-logo:active {
+  opacity: 0.3;
+}
 .main-navigation {
   padding-top: 5px;
 }
@@ -85,14 +88,15 @@ img {
 .main-navigation a:hover {
   color:#fb565a;
 }
+.main-navigation a:active {
+  color:#eeeeee;
+}
 .main-navigation .active {
   position: relative;
 
 
 }
-.main-navigation .active a:hover {
-  background: none;
-}
+
 .main-navigation .active::after {
   content: "";
   position: absolute;
@@ -119,6 +123,10 @@ img {
 }
 .basket:hover {
   color: #fb565a;
+}
+.basket:active {
+    color: #000000;
+  };
 }
 .basket::before {
   content: "";
@@ -158,18 +166,19 @@ img {
     width: 20px;
     height: 20px;
     margin:0 5px;
-    background:white;
+    background: white;
 
     vertical-align: top;
     border-radius:50%;
     cursor:pointer;
-
 }
+
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-    background: white;
-      box-shadow: inset;
+  border: 5px solid #fff;
+    background: #ababab;
+
 }
 .slide{
     position:absolute;
@@ -216,6 +225,10 @@ font-family: "Roboto", "Arial", sans-serif;
 }
 .slide .btn:hover{
   background:#e74246;
+}
+.slide .btn:active{
+  background: #d7373b;
+  color: #e37376;
 }
 .slide:nth-child(1){
     background-image:url('../img/index/mobile.png');
@@ -327,6 +340,10 @@ width: 1100px;
 }
 .red:hover {
   background: #e74246;
+}
+.red:active {
+  background: #d7373b;
+  color: #e06366;
 }
 .green {
     background:#00ca74;
@@ -607,6 +624,32 @@ background-position:  10px  20px;
 }
 
 /*pop up*/
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-content {
   display: none;
 
@@ -641,6 +684,13 @@ margin-top: 13px;
   background-position: -100px -10px;
   border: 0;
   cursor: pointer;
+}
+.modal-content-show {
+  display: block;
+   animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .modal-content-close:hover{
   opacity: 1;
@@ -773,7 +823,7 @@ border-top: 2px solid #eeeeee;
 .range-controls .toggle {
   position: absolute;
   top: 30px;
-  left: 0px;
+
   width: 4px;
   height: 4px;
   cursor: pointer;
@@ -788,7 +838,7 @@ border-top: 2px solid #eeeeee;
 }
 
 .range-controls .toggle-max {
-  left: 163px;
+  left: 160px;
 }
 
 .price-controls {
@@ -819,6 +869,9 @@ border-top: 2px solid #eeeeee;
 }
 .type-of-net{
 position: relative;
+
+  cursor: pointer;
+  color: #4d4d4d;
 }
 
 .net-name {
@@ -831,8 +884,30 @@ position: relative;
   text-transform: uppercase;
 }
 .type-of-net input[type=radio]{
+  display: none;
+}
+.type-of-net input[type="radio"] + .radio-indicator {
   position: absolute;
-  opacity: 0.1;
+  top: -2px;
+  left: 0;
+
+  width: 24px;
+  height: 24px;
+
+  border: 3px solid #4d4d4d;
+  border-radius: 50%
+}
+.type-of-net input[type="radio"]:checked + .radio-indicator::before,
+.type-of-net input[type="radio"]:checked + .radio-indicator::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4d4d4d;
 }
 .type-of-net ul {
   padding: 0;
@@ -841,7 +916,7 @@ position: relative;
 }
 .type-of-net li {
   position: relative;
-  padding-left: 39px;
+padding-left: 39px;
   padding-bottom: 6px;
 margin-bottom: 10px;
   font-size: 16px;
@@ -850,29 +925,12 @@ margin-bottom: 10px;
 .type-of-net li:hover {
   opacity: 1;
 }
-.type-of-net li::before {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  left: 1px;
-  width: 25px;
-  height: 25px;
-  background: white url("../img/index/spritesheet_2.png") no-repeat;
-  background-position: -141px -10px;
-}
-.type-of-net  .active::before {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  left: 1px;
-  width: 25px;
-  height: 25px;
-  background: white url("../img/index/spritesheet_2.png") no-repeat;
-background-position: -186px -10px;
-}
-.features input[type=checkbox]{
-  position: absolute;
-  visibility: hidden;
+
+.features{
+position: relative;
+
+  cursor: pointer;
+  color: #4d4d4d;
 }
 .features-name {
   font-size: 18px;
@@ -883,6 +941,32 @@ background-position: -186px -10px;
   font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
 }
+.features-label {
+  width: 24px;
+    height: 24px;
+
+    position: relative;
+}
+.features-label input[type="checkbox"] {
+  display: none;
+}
+
+.features-label input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -2px;
+  left: 0;
+cursor: pointer;
+  width: 24px;
+  height: 24px;
+
+  background: url("../img/index/sprite/checkbox_off.png")
+}
+.features-label input[type="checkbox"]:checked + .checkbox-indicator {
+
+
+ background: url("../img/index/sprite/checkbox_on.png") no-repeat;
+}
+
 .features ul {
   padding: 0;
   margin: 0;
@@ -898,26 +982,6 @@ background-position: -186px -10px;
 }
 .features li:hover {
   opacity: 1;
-}
-.features li::before {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  left: 1px;
-  width: 25px;
-  height: 25px;
-  background: white url("../img/index/spritesheet_2.png") no-repeat;
-  background-position: -10px -10px;
-}
-.features .checked::before {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  left: 1px;
-  width: 28px;
-  height: 25px;
-  background: white url("../img/index/spritesheet_2.png") no-repeat;
-  background-position: -53px -10px;
 }
 .left-panel .btn {
   display:block;
