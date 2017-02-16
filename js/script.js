@@ -1,49 +1,23 @@
-var link = document.querySelector(".name");
 
+var link = document.querySelector(".contact-link");
 var popup = document.querySelector(".modal-content");
 var close = popup.querySelector(".modal-content-close");
-
+var login = popup.querySelector("[name=name]");
+var email = popup.querySelector("[name=email]");
 var form = popup.querySelector("form");
-var name = popup.querySelector(".name");
-var email = popup.querySelector(".email");
-
-var storage = localStorage.getItem("name");
-
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal-content-show");
-
-  if (storage) {
-    name.value = storage;
-    email.focus();
-  } else {
-    name.focus();
-  }
-
+  login.focus();
 });
-
-close.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.remove("modal-content-show");
-  popup.classList.remove("modal-error");
-});
-
-form.addEventListener("submit", function(event) {
-  if (!name.value || !email.value) {
+  close.addEventListener("click", function(event) {
     event.preventDefault();
-    popup.classList.remove("modal-error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal-error");
-  } else {
-    localStorage.setItem("name", name.value);
-  }
-});
+    popup.classList.remove("modal-content-show");
 
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (popup.classList.contains("modal-content-show")) {
-      popup.classList.remove("modal-content-show");
-      popup.classList.remove("modal-error");
-    }
-  }
-})
+});
+form.addEventListener("submit", function(event) {
+  if (!login.value || !email.value) {
+  event.preventDefault();
+  console.log(login.value);
+  console.log(email.value);
+});

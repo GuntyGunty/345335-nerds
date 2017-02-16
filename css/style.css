@@ -126,7 +126,6 @@ img {
 }
 .basket:active {
     color: #dadada;
-  };
 }
 .basket::before {
   content: "";
@@ -689,6 +688,9 @@ margin-left: -480px;
    box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.7);
 
 }
+.modal-content-show {
+  display: block;
+}
 .top_field {
   display: flex;
   justify-content: space-between;
@@ -709,10 +711,7 @@ margin-top: 13px;
   border: 0;
   cursor: pointer;
 }
-.modal-content-show {
-  display: block;
-   animation: bounce 0.6s;
-}
+
 .modal-error {
   animation: shake 0.6s;
 }
